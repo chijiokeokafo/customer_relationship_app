@@ -29,11 +29,11 @@ class Rolodex
 	
 	def search_contact(id)
 		@contacts.each do |number|
-			if number.id == id
+			if id == number.id
 				puts "FIRST NAME: #{x.first_name}", "LAST NAME: #{x.last_name}", "EMAIL: #{x.email}", "NOTE: #{x.note}"
 			else
-				print "That contact does not exist, are you sure you have the right ID? "
-			end 		
+			return "That contact does not exist."
+			end	
 		end
 	end
 	
