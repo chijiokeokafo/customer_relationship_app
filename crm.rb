@@ -81,15 +81,15 @@ class CRM #class must have a capital letter!
       puts "FIRST NAME: #{x.first_name}", "LAST NAME: #{x.last_name}", "EMAIL: #{x.email}", "NOTE: #{x.note}"
     end
   end
-  
-  # def single_contact
-  # 	puts "Please enter two digit ID: "
-  # 	find_single = gets.chomp
-  # 	find = @rolodex.searchcontact(find_contact)
-  # end
+
+  def single_contact
+  	puts "Please enter three digit ID: "
+  	find_single = gets.chomp
+  	find = @rolodex.searchcontact(find_single)
+  end
 
 end
 
 bitmaker = CRM.new("Bitmaker labs CRM")
-bitmaker.main_menu
+bitmaker.main_menu 
 

@@ -1,9 +1,9 @@
 class Rolodex
-	attr_reader :contacts
+	attr_reader :contacts 
 	@@ids = 001
 	def initialize
 		@contacts = []
-		# @ids = 1001
+		# @ids = 001
 	end
 
 	def add_contact(contact)
@@ -27,20 +27,21 @@ class Rolodex
 	  @contacts
 	end
 	
-	# def search_contact(id)
-	# 	contacts.each do |number|
-	# 		if number.id == id
-	# 			puts "FIRST NAME: #{x.first_name}", "LAST NAME: #{x.last_name}", "EMAIL: #{x.email}", "NOTE: #{x.note}"
-	# 		else
-	# 			print "That contact does not exist, are you sure you have the right ID? "
-	# 		end 		
-	# end
+	def search_contact(id)
+		@contacts.each do |number|
+			if number.id == id
+				puts "FIRST NAME: #{x.first_name}", "LAST NAME: #{x.last_name}", "EMAIL: #{x.email}", "NOTE: #{x.note}"
+			else
+				print "That contact does not exist, are you sure you have the right ID? "
+			end 		
+		end
+	end
 	
 	# def display_attribute
 		
 	# end
 
 	# def delete_contact
-		
+		 
 	# end
 end
