@@ -83,10 +83,10 @@ class CRM #class must have a capital letter!
   end
 
   def single_contact
-  	puts "Please enter three digit ID: "
+  	puts "Please enter an ID number : "
   	find_single = gets.chomp.to_i
   	find = @rolodex.search_contact(find_single)
-  	puts find
+  	
   end
 
 end

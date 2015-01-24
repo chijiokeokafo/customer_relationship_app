@@ -30,9 +30,9 @@ class Rolodex
 	def search_contact(id)
 		@contacts.each do |number|
 			if id == number.id
-				puts "FIRST NAME: #{x.first_name}", "LAST NAME: #{x.last_name}", "EMAIL: #{x.email}", "NOTE: #{x.note}"
+				puts "FIRST NAME: #{number.first_name}", "LAST NAME: #{number.last_name}", "EMAIL: #{number.email}", "NOTE: #{number.note}"
 			else
-			return "That contact does not exist."
+			    "That contact does not exist."
 			end	
 		end
 	end
