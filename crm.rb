@@ -81,11 +81,12 @@ class CRM #class must have a capital letter!
       puts "FIRST NAME: #{x.first_name}", "LAST NAME: #{x.last_name}", "EMAIL: #{x.email}", "NOTE: #{x.note}"
     end
   end
-  def single_contact
-  	puts "Please enter two digit ID: "
-  	find_single = gets.chomp
-  	find = 
-  end
+  
+  # def single_contact
+  # 	puts "Please enter two digit ID: "
+  # 	find_single = gets.chomp
+  # 	find = @rolodex.searchcontact(find_contact)
+  # end
 
 end
 

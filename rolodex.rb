@@ -27,20 +27,20 @@ class Rolodex
 	  @contacts
 	end
 	
-	def search_contact(id)
-		contacts.each do |number|
-			if number.id == id
-				puts "FIRST NAME: #{x.first_name}", "LAST NAME: #{x.last_name}", "EMAIL: #{x.email}", "NOTE: #{x.note}"
-			else
-				print "That contact does not exist, are you sure you have the right ID? "
-			end 		
-	end
+	# def search_contact(id)
+	# 	contacts.each do |number|
+	# 		if number.id == id
+	# 			puts "FIRST NAME: #{x.first_name}", "LAST NAME: #{x.last_name}", "EMAIL: #{x.email}", "NOTE: #{x.note}"
+	# 		else
+	# 			print "That contact does not exist, are you sure you have the right ID? "
+	# 		end 		
+	# end
 	
-	def display_attribute
+	# def display_attribute
 		
-	end
+	# end
 
-	def delete_contact
+	# def delete_contact
 		
-	end
+	# end
 end
