@@ -76,11 +76,12 @@ class CRM #class must have a capital letter!
   end
 
   def display_all
+    puts "ALL CONTACTS", "---------------"
     @rolodex.contacts.each do |x|
-      puts "FIRST NAME: #{x.first_name}, LAST NAME: #{x.last_name}, EMAIL: #{x.email}, NOTE: #{x.note}"
-      puts ""
+      puts "FIRST NAME: #{x.first_name}", "LAST NAME: #{x.last_name}", "EMAIL: #{x.email}", "NOTE: #{x.note}"
     end
   end
+
 end
 
 bitmaker = CRM.new("Bitmaker labs CRM")
