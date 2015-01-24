@@ -32,12 +32,15 @@ class Rolodex
 			if id == number.id
 				puts "FIRST NAME: #{number.first_name}", "LAST NAME: #{number.last_name}", "EMAIL: #{number.email}", "NOTE: #{number.note}"
 			else
-			    "That contact does not exist."
+			   puts "That contact does not exist."
 			end	
 		end
 	end
 	
-	# def display_attribute
+	# def filter_contacts(attribute)
+	# 	@contacts.each do |attr|
+	# 		if  = 
+
 		
 	# end
 

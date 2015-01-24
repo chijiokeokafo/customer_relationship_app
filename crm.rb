@@ -86,6 +86,11 @@ class CRM #class must have a capital letter!
   	puts "Please enter an ID number : "
   	find_single = gets.chomp.to_i
   	find = @rolodex.search_contact(find_single)
+  end
+  def display_attribute
+  	puts "Please enter the attribute you would like to see: "
+  	find_attribute = gets.chomp
+  	find = @rolodex.filter_contacts(find_attribute)
   	
   end
 

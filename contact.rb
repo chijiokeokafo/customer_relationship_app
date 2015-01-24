@@ -8,6 +8,8 @@ class Contact
     @note = note
   end
 
+
+
   # These methods given for free by attr_accessor
   # def first_name
   # 	return @first_name
