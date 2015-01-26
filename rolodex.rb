@@ -25,6 +25,26 @@ class Rolodex
 		end
 		return found_contact
 	end
+
+	def mod_contact(idnum)
+		modify = find_contact(idnum) 
+		puts "Update First Name: " 
+		newname = gets.chomp 
+		contact = @contacts.find(idnum).first 
+		contact.first_name = newname
+		puts "Update Last Name: "
+		newlastname = gets.chomp
+		contact = @contacts.find(idnum).first
+		contact.last_name = newlastname
+		puts "Update Email:"
+		newemail = gets.chomp
+		contact = @contacts.find(idnum).first
+		contact.email = newemail
+		puts "Update Note:"
+		newnote = gets.chomp
+		contact = @contacts.find(idnum).first
+		contact.note = newnote
+	end
 	
 	def display_all
 	  @contacts

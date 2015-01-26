@@ -63,17 +63,18 @@ class CRM #class must have a capital letter!
     @rolodex.add_contact(new_contact)
   end
 
-  def modify_contact
-    puts "Enter contact ID to modify"
-    modify = gets.chomp.to_i
-
-    found = @rolodex.find_contact(modify)
-    if found.nil?
-      puts "Could not find a contact with that ID"
-    else
-      found.first_name = " "
-    end
+  def modify_contact	
+  	puts "Enter contact ID to modify"
+  	modify = gets.chomp.to_i
+  	puts "Is #{modify} the correct ID? Type yes/no "
+  	yesno = gets.chomp
+  	if yesno == "yes"
+  		@rolodex.mod_contact(modify)
+  	elsif yesno == "no"
+  		print_main_menu
+  	end
   end
+
 
   def display_all
     puts "ALL CONTACTS", "---------------"
