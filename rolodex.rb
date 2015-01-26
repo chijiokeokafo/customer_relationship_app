@@ -1,3 +1,6 @@
+require_relative './contact.rb'
+
+
 class Rolodex
 	attr_reader :contacts 
 	@@ids = 001
@@ -31,18 +34,26 @@ class Rolodex
 		@contacts.each do |number|
 			if id == number.id
 				puts "FIRST NAME: #{number.first_name}", "LAST NAME: #{number.last_name}", "EMAIL: #{number.email}", "NOTE: #{number.note}"
-			else
-			   puts "That contact does not exist."
+			elsif id != number.id
+			   puts "That isn't a saved ID number, try again."
 			end	
 		end
 	end
 	
-	# def filter_contacts(attribute)
-	# 	@contacts.each do |attr|
-	# 		if  = 
-
+	def filter_contacts(attribute)
+		@contacts.each do |attr|
+			if attribute ==  "firstname"
+				puts attr.first_name
+			elsif attribute == "lastname"
+				puts attr.last_name
+			elsif attribute == "email"
+				puts attr.email
+			else
+				puts "Are you sure that's an attribute?"
+			end
+		end
 		
-	# end
+	end
 
 	# def delete_contact
 		 
