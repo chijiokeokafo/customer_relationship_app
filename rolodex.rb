@@ -34,8 +34,8 @@ class Rolodex
 		@contacts.each do |number|
 			if id == number.id
 				puts "FIRST NAME: #{number.first_name}", "LAST NAME: #{number.last_name}", "EMAIL: #{number.email}", "NOTE: #{number.note}"
-			elsif id != number.id
-			   puts "That isn't a saved ID number, try again."
+			# elsif id > .id
+			#    puts "That isn't a saved ID number, try again."
 			end	
 		end
 	end
@@ -54,8 +54,13 @@ class Rolodex
 		end
 		
 	end
-
-	# def delete_contact
-		 
-	# end
+	def delete_contact(id)
+		erased_id = find_contact(id)
+		@contacts.each do |del|
+			if id == del.id
+				@contacts.delete(erased_id)
+				puts "contact deleted."
+			end
+		end
+	end
 end

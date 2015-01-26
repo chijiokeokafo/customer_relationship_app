@@ -94,6 +94,13 @@ class CRM #class must have a capital letter!
   	
   end
 
+  def delete_contact
+	puts "Enter ID to be erased: "
+	erasecontact = gets.chomp.to_i
+	@rolodex.delete_contact(erasecontact)
+		
+  end
+
 end
 
 bitmaker = CRM.new("Bitmaker labs CRM")
